@@ -67,7 +67,7 @@ _The **My Top 5** MVP users will be able to add a list to any provided category.
 
 - Desktop Landing
 
-[Dummy Link](url)
+[Here](https://whimsical.com/33Frv13jXEXSTEqxG15VAJ)
 
 - Desktop Hero
 
@@ -162,6 +162,8 @@ src
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
+- Add Like button, and display most liked lists.
+- Add comments section
 ***
 
 ## Code Showcase
