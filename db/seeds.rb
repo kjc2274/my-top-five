@@ -7,14 +7,14 @@
 #   Character.create(name: "Luke", movie: movies.first)
 Category.destroy_all
 
-Category.create(title: "Movies", description: "", image: "");
+Category.create(title: "Artists", description: "", image: "");
+Category.create(title: "Athletes", description: "", image: "");
 Category.create(title: "Books", description: "", image: "");
-Category.create(title: "Foods", description: "", image: "");
+Category.create(title: "Dream Destinations", description: "", image: "");
+Category.create(title: "Favorite Foods", description: "", image: "");
+Category.create(title: "Movies", description: "", image: "");
 Category.create(title: "Songs", description: "", image: "");
 Category.create(title: "TV Shows", description: "", image: "");
-Category.create(title: "Dream Destinations", description: "", image: "");
-Category.create(title: "Athletes", description: "", image: "");
-Category.create(title: "Artists", description: "", image: "");
-Category.create(title: "Vacation Spots", description: "", image: "");
+Category.create(title: "Video Games", description: "", image: "");
 
 p "#{Category.all.count} categories created"

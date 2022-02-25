@@ -3,9 +3,18 @@ class ListsController < ApplicationController
 
   # GET /lists
   def index
-    @lists = List.all
+    @category = Category.find(params[:category_id])
+    @lists = @category.lists
 
-    render json: @lists
+    render json: @lists, include: :user
+  end
+
+  # GET /users/:user_id/lists
+  def get_user_lists
+    @user = User.find(params[:user_id])
+    @lists = @user.lists
+
+    render json: @lists, include: :category
   end
 
   # GET /lists/1
@@ -16,6 +25,8 @@ class ListsController < ApplicationController
   # POST /lists
   def create
     @list = List.new(list_params)
+    @list.user = @current_user
+    @list.product_id = params[:product_id]
 
     if @list.save
       render json: @list, status: :created
