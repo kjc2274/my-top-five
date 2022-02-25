@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
   before_action :set_list, only: %i[ show update destroy ]
+  before_action :authorize_request, only: [:create, :update, :destroy, :get_user_lists]
 
   # GET /lists
   def index
@@ -26,7 +27,7 @@ class ListsController < ApplicationController
   def create
     @list = List.new(list_params)
     @list.user = @current_user
-    @list.product_id = params[:product_id]
+    @list.category_id = params[:category_id]
 
     if @list.save
       render json: @list, status: :created
