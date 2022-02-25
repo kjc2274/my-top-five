@@ -9,6 +9,7 @@ import Categories from './components/Categories/Categories';
 import CategoryCreate from './components/CategoryCreate/CategoryCreate';
 import Lists from './components/Lists/Lists';
 import ListDetail from './components/ListDetail/ListDetail';
+import ListEdit from './components/ListEdit/ListEdit';
 
 function App() {
   //create currentUser variable for auth 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/categories/create' element={<CategoryCreate/>}/>
         <Route path='/categories/lists' element={<Lists/>}/>
         <Route path='/categories/lists/:id' element={<ListDetail/>}/>
+        <Route path='/categories/lists/:id/edit' element={<ListEdit/>}/>
       </Routes>
       <Footer/>
     </div>
