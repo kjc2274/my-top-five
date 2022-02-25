@@ -13,6 +13,7 @@ import ListEdit from './components/ListEdit/ListEdit';
 import ListCreate from './components/ListCreate/ListCreate';
 import UserCreate from './components/UserCreate/UserCreate';
 import UserDetail from './components/UserDetail/UserDetail';
+import UserUpdate from './components/UserUpdate/UserUpdate';
 
 function App() {
   //create currentUser variable for auth 
@@ -46,6 +47,7 @@ function App() {
         <Route path='/categories/lists' element={<ListCreate/>}/>
         <Route path='/sign-up' element={<UserCreate/>}/>
         <Route path='/users/:id' element={<UserDetail/>}/>
+        <Route path='/users/:id/edit' element={<UserUpdate/>}/>
       </Routes>
       <Footer/>
     </div>
