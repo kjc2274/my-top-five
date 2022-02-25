@@ -6,6 +6,7 @@ import Homepage from './components/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Categories from './components/Categories/Categories';
+import CategoryCreate from './components/CategoryCreate/CategoryCreate';
 
 function App() {
   //create currentUser variable for auth 
@@ -32,7 +33,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/categories' element={<Categories/>}/>
-        <Route/>
+        <Route path='/categories/create' element={<CategoryCreate/>}/>
       </Routes>
       <Footer/>
     </div>

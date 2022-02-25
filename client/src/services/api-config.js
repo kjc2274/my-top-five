@@ -58,6 +58,11 @@ export const getOneCategory = async(category_id)=>{
     return res.data
 }
 
+export const createCategory = async(categoryData)=>{
+    const res = await api.post('/categories', {category: categoryData});
+    return res.data
+}
+
 // List api
 export const getCategoryLists = async(category_id)=>{
     const res = await api.get(`/categories/${category_id}/lists`);
