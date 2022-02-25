@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { verifyUser } from './services/api-config';
 import Homepage from './components/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 function App() {
   //create currentUser variable for auth 
@@ -32,6 +33,7 @@ function App() {
         <Route/>
         <Route/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
