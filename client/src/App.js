@@ -2,6 +2,7 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { verifyUser } from './services/api-config';
+import Homepage from './components/Homepage/Homepage';
 
 function App() {
   //create currentUser variable for auth 
@@ -25,7 +26,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route to/>
+        <Route path='/' element={<Homepage/>}/>
         <Route/>
         <Route/>
       </Routes>
