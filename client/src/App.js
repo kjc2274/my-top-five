@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { verifyUser } from './services/api-config';
 import Homepage from './components/Homepage/Homepage';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   //create currentUser variable for auth 
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route/>
