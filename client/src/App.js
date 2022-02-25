@@ -5,6 +5,7 @@ import { verifyUser } from './services/api-config';
 import Homepage from './components/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import Categories from './components/Categories/Categories';
 
 function App() {
   //create currentUser variable for auth 
@@ -30,7 +31,7 @@ function App() {
       <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
-        <Route/>
+        <Route path='/categories' element={<Categories/>}/>
         <Route/>
       </Routes>
       <Footer/>
