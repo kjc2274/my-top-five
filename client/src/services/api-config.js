@@ -54,8 +54,37 @@ export const getAllCategories = async()=>{
 }
 
 export const getOneCategory = async(category_id)=>{
-    const res = await api.get(`/categories/${category_id}`)
+    const res = await api.get(`/categories/${category_id}`);
     return res.data
 }
 
-// Review api
+// List api
+export const getCategoryLists = async(category_id)=>{
+    const res = await api.get(`/categories/${category_id}/lists`);
+    return res.data
+}
+
+export const getUserLists = async(user_id)=>{
+    const res = await api.get(`/users/${user_id}/lists`);
+    return res.data
+}
+
+export const getOneList = async(category_id, list_id)=>{
+    const res = await api.get(`/categories/${category_id}/lists/${list_id}`);
+    return res.data
+}
+
+export const createList = async(category_id, listData)=>{
+    const res = await api.post(`/categories/${category_id}/lists`, {list: listData});
+    return res.data
+}
+
+export const updateList = async(category_id, list_id, listData)=>{
+    const res = await api.put(`/categories/${category_id}/lists/${list_id}`, {list: listData});
+    return res.data
+}
+
+export const deleteList = async(category_id, list_id)=>{
+    const res = await api.delete(`/categories/${category_id}/lists/${list_id}`);
+    return res
+}
