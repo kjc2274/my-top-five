@@ -11,10 +11,12 @@ export default function Login(props) {
   return (
     <form onSubmit={async(e)=>{
         e.preventDefault();
+        // create object to pass in as loginData
         const user = {
             username,
             password
         }
+        // use loginUser to set authtoken in localStorage and return authenticated user
         const res = await loginUser(user);
         props.setCurrentUser(res);
         navigate('/')
