@@ -44,10 +44,10 @@ function App() {
         <Route path='/' element={<Homepage/>}/>
         <Route path='/categories' element={<Categories/>}/>
         <Route path='/categories/create' element={<CategoryCreate/>}/>
-        <Route path='/categories/lists' element={<Lists/>}/>
-        <Route path='/categories/lists/:id' element={<ListDetail/>}/>
-        <Route path='/categories/lists/:id/edit' element={<ListEdit/>}/>
-        <Route path='/categories/lists' element={<ListCreate/>}/>
+        <Route path='/categories/:category_id' element={<Lists/>}/>
+        <Route path='/categories/:category_id/:list_id' element={<ListDetail/>}/>
+        <Route path='/categories/:category_id/:list_id/edit' element={<ListEdit/>}/>
+        <Route path='/categories/:category_id/new' element={<ListCreate/>}/>
         <Route path='/sign-up' element={<UserCreate setCurrentUser={setCurrentUser}/>}/>
         <Route path='/users/:id' element={<UserDetail currentUser={currentUser}/>}/>
         <Route path='/users/:id/edit' element={<UserUpdate setCurrentUser={setCurrentUser}/>}/>
