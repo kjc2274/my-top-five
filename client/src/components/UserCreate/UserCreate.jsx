@@ -24,7 +24,7 @@ export default function UserCreate(props) {
         }
         const res = await registerUser(user);
         props.setCurrentUser(res);
-        navigate('/')
+        navigate('/login')
     }}>
       <label>Username:
         <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
