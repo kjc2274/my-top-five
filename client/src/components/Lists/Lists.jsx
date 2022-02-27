@@ -39,7 +39,6 @@ export default function Lists() {
             <li>{list.fourth}</li>
             <li>{list.fifth}</li>
           </ul>
-          <p>{list.comment}</p>
         </Link>
       ))}
     </div>
