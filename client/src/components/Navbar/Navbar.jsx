@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar(props) {
   return (
-    <div>
-      <Link to='/'><h1>My Top 5</h1></Link>
+    <div className='navbar'>
+      <Link to='/' className='home'><h1>My Top 5</h1></Link>
         {props.currentUser && props.currentUser?.id !== 4 ?
-        <>
-          <Link to='/categories'>Categories</Link>
-          <Link to={`/users/${props.currentUser?.id}`}>My Profile</Link>
-          <button onClick={props.logout}>Log Out</button>
-        </>
+        <div className='links'>
+          <Link to='/categories' className='cat'>Categories</Link>
+          <Link to={`/users/${props.currentUser?.id}`} className='users'>My Profile</Link>
+          <button onClick={props.logout} className='logout'>Log Out</button>
+        </div>
         :
-        <>
-         <Link to='/login'>Login</Link>
-         <Link to='/sign-up'>Sign Up</Link>
-        </>
+        <div className='links'>
+         <Link to='/login' className='login'>Login</Link>
+         <Link to='/sign-up' className='signup'>Sign Up</Link>
+        </div>
         }
     </div>
   )

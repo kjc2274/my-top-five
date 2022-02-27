@@ -20,7 +20,7 @@ export default function Login(props) {
         const res = await loginUser(user);
         props.setCurrentUser(res);
         navigate('/')
-    }}>
+    }} className='login-form'>
       <label>Username:
         <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
       </label>

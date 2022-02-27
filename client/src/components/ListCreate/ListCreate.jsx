@@ -31,7 +31,7 @@ export default function ListCreate() {
       }}
     >
       <label>Author:
-        <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)}/>
+        <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username here'/>
       </label>
       <label>First:  
         <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)}/>
