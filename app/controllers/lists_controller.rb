@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
   before_action :set_list, only: %i[ show update destroy ]
-  before_action :authorize_request, only: [:create, :update, :destroy, :get_user_lists]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /lists
   def index
