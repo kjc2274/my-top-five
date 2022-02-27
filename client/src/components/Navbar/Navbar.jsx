@@ -8,6 +8,7 @@ export default function Navbar(props) {
       <Link to='/categories'>Categories</Link>
         {props.currentUser ?
         <>
+          <Link to={`/users/${props.currentUser.id}`}>My Profile</Link>
           <button onClick={props.logout}>Log Out</button>
         </>
         :
