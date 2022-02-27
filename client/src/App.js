@@ -41,7 +41,7 @@ function App() {
     <div className="App">
       <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
-        <Route path='/' element={<Homepage/>}/>
+        <Route path='/' element={<Homepage currentUser={currentUser} setCurrentUser={setCurrentUser}/>}/>
         <Route path='/categories' element={<Categories/>}/>
         <Route path='/categories/create' element={<CategoryCreate/>}/>
         <Route path='/categories/:category_id' element={<Lists/>}/>

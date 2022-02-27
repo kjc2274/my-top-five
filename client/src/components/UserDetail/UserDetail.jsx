@@ -22,8 +22,8 @@ export default function UserDetail(props) {
     fetchLists();
   },[id, toggle]);
 
-  const handleDelete = async(id) => {
-    await deleteList(id);
+  const handleDelete = async(list_id) => {
+    await deleteList(id, list_id);
     setToggle(prevtoggle => !prevtoggle);
   }
 
