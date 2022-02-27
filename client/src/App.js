@@ -48,7 +48,7 @@ function App() {
         <Route path='/categories/lists' element={<ListCreate/>}/>
         <Route path='/sign-up' element={<UserCreate setCurrentUser={setCurrentUser}/>}/>
         <Route path='/users/:id' element={<UserDetail/>}/>
-        <Route path='/users/:id/edit' element={<UserUpdate/>}/>
+        <Route path='/users/:id/edit' element={<UserUpdate setCurrentUser={setCurrentUser}/>}/>
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>}/>
       </Routes>
       <Footer/>
