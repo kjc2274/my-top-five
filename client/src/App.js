@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { verifyUser } from './services/api-config';
 import Homepage from './components/Homepage/Homepage';
@@ -19,7 +19,8 @@ import Login from './components/Login/Login';
 function App() {
   //create currentUser variable for auth 
   const [currentUser, setCurrentUser] = useState(null)
-  
+  const navigate = useNavigate();
+
   //if there is an authToken in localStorage set that token's user as currentUser
   useEffect(()=>{
     const fetchUser = async()=>{
@@ -33,6 +34,7 @@ function App() {
   const logout = () => {
     localStorage.removeItem('authToken');
     setCurrentUser(null);
+    navigate('/')
   }
 
   return (
