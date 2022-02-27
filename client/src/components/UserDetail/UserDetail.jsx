@@ -42,7 +42,7 @@ export default function UserDetail(props) {
             <li>{list.fifth}</li>
           </ul>
           <p>{list.comment}</p>
-          {props.currentUser.id === user.id ? 
+          {props.currentUser?.id === user?.id ? 
           <button onClick={()=>handleDelete(list.id)}>Delete List</button>
           : null}
         </div>

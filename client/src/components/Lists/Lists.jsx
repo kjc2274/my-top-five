@@ -26,9 +26,10 @@ export default function Lists() {
 
   return (
     <div>
-      <h3>{category_id}</h3>
       <h2>{category.title}</h2>
       <img src={category.image} alt={category.title} />
+      <p>{category.description}</p>
+      <Link to={`/categories/${category_id}/new`}><button>Add List</button></Link>
       {lists.map((list)=>(
         <Link to={`/categories/${category_id}/${list.id}`} key={list.id}>
           <ul>
