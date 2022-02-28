@@ -11,10 +11,46 @@
     flex-direction: column;
     align-items: flex-end;
     background: rgb(245, 245, 220, .75);
+    background: url("https://i.pinimg.com/600x315/45/87/c5/4587c5bc31c876a8ea02e03d731b769d.jpg");
     padding: 5px;
     margin-bottom: 5px;
+    height: 500px;
+    width: 350px;
+    font-family: cursive;
+}
+
+#form-div input{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid gray;
+    padding: 3px;
+    background-color: rgb(254, 255, 183);
+    width: 200px;
+}
+
+#form-div textarea{
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 3px;
+    resize: none;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(254, 255, 183);
 }
 
 .list-create-form{
     margin: 8px;
+}
+
+#create-list-button{
+    background: rgb(23, 3, 34);
+    padding: 5px;
+    color: rgb(230, 203, 255);
+    border-radius: 6px;
+    transition: all .1s ease-in-out;
+}
+
+#create-list-button:hover{
+    background: green;
+    transform: scale(1.1);
 }

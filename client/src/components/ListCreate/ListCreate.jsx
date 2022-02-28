@@ -31,29 +31,29 @@ export default function ListCreate() {
       }}
     className='list-create'>
       <div id='form-div'>
-        <label className='list-create-form'>Author:
-          <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username here'/>
+        <label className='list-create-form'>Author: 
+          <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username'/>
         </label>
-        <label className='list-create-form'>First:  
-          <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)}/>
+        <label className='list-create-form'>First:   
+          <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)} required/>
         </label>
-        <label className='list-create-form'>Second:
-          <input type='text' value={second} onChange={(e)=> setSecond(e.target.value)}/>
+        <label className='list-create-form'>Second: 
+          <input type='text' value={second} onChange={(e)=> setSecond(e.target.value)} required/>
         </label>
-        <label className='list-create-form'>Third:
-          <input type='text' value={third} onChange={(e)=> setThird(e.target.value)}/>
+        <label className='list-create-form'>Third: 
+          <input type='text' value={third} onChange={(e)=> setThird(e.target.value)} required/>
         </label>
-        <label className='list-create-form'>Fourth:
-          <input type='text' value={fourth} onChange={(e)=> setFourth(e.target.value)}/>
+        <label className='list-create-form'>Fourth: 
+          <input type='text' value={fourth} onChange={(e)=> setFourth(e.target.value)} required/>
         </label>
-        <label className='list-create-form'>Fifth:
-          <input type='text' value={fifth} onChange={(e)=> setFifth(e.target.value)}/>
+        <label className='list-create-form'>Fifth: 
+          <input type='text' value={fifth} onChange={(e)=> setFifth(e.target.value)} required/>
         </label>
-        <label className='list-create-form'>Comments:
-          <input type='text' value={comment} onChange={(e)=> setComment(e.target.value)}/>
+        <label className='list-create-form'>Comments: 
+          <textarea type='text' value={comment} onChange={(e)=> setComment(e.target.value)} placeholder='Provide any additional information you might like to share here!'/>
         </label>
       </div>
-        <button>Create</button>
+        <button id='create-list-button'>Create</button>
     </form>
   )
 }
