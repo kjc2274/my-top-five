@@ -7,16 +7,21 @@
     background: linear-gradient(rgb(221, 215, 189), 25%, rgb(250, 247, 234)) ;
     margin-top: -15px;
 }
-.home{
+
+h1{
+    margin: 0;
     position: fixed;
     right: 0;
     left: 0;
     font-family: 'Modak';
-    color: rgb(231, 132, 102);
-    font-size: xx-large;
+    font-size: 4rem;
     text-shadow: 2px 2px rgb(243, 198, 198);
-    text-decoration: none;
     padding-top: 10px;
+}
+
+.home{
+    text-decoration: none;
+    color: rgb(231, 132, 102);
 }
 
 .links{

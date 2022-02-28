@@ -14,3 +14,17 @@
 .guest-button, .login-button{
     margin: 5px;
 }
+
+#welcome{
+    font-family: cursive;
+}
+
+#welcome-paragraph{
+    width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid peru;
+    background: rgb(236, 219, 208);
+    box-shadow: 3px 3px rgb(196, 130, 104);
+    font-family: cursive;
+}

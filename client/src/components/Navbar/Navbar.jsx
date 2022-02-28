@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar(props) {
   return (
     <div className='navbar'>
-      <Link to='/' className='home'><h1>My Top 5</h1></Link>
+      <h1><Link to='/' className='home'>My Top 5</Link></h1>
         {props.currentUser && props.currentUser?.id !== 4 ?
         <div className='links'>
           <Link to='/categories' className='cat'>Categories</Link>
