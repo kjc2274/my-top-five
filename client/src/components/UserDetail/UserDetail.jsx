@@ -30,7 +30,14 @@ export default function UserDetail(props) {
   return (
     <div className='user-info'>
       <h2>{user.username}</h2>
-      <h4>{user.email}</h4>
+      {props.currentUser.id === user.id ? 
+      <div>
+        <h4>{user.email}</h4>
+        <Link to={`/users/${user.id}/edit`}><button>Edit User</button></Link>
+      </div>
+      :
+      null
+      }
       <div className='user-lists'>
       {lists.map((list)=>(
         <div key={list.id} className='user-ul'>
