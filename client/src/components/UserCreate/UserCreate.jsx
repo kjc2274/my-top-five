@@ -40,7 +40,7 @@ export default function UserCreate(props) {
           <input type='password' value={confirmPassword} onChange={(e)=> setConfirmPassword(e.target.value)}/>
         </label>
       </div>
-        <button>Sign Up</button>
+        <button id='signup-button'>Sign Up</button>
     </form>
   )
 }

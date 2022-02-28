@@ -25,12 +25,14 @@ export default function Login(props) {
           alert("Unable to process login. Plese make sure your username and password are correct.")
         }
     }} className='login-form'>
-      <label className='login-input'>Username:
-        <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
-      </label>
-      <label className='login-input'>Password:
-        <input type='password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
-      </label>
+      <div id='login-div'>
+        <label className='login-input'>Username:
+          <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
+        </label>
+        <label className='login-input'>Password:
+          <input type='password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
+        </label>
+      </div>
         <button className='login-submit'>Login</button>
     </form>
   )
