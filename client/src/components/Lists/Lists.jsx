@@ -26,20 +26,20 @@ export default function Lists() {
 
   return (
     <div className='list-page'>
-      <h2>{category.title}</h2>
+      <h2 id='list-title'>{category.title}</h2>
       <img src={category.image} alt={category.title} className='cat-image'/>
-      <p>{category.description}</p>
-      <Link to={`/categories/${category_id}/new`}><button>Add List</button></Link>
+      <p id='cat-description'>{category.description}</p>
+      <Link to={`/categories/${category_id}/new`}><button id='add-list'>Add List</button></Link>
       <div className='lists-div'>
         {lists.map((list)=>(
           <Link to={`/categories/${category_id}/${list.id}`} key={list.id}>
             <ul className='lists'>
               <li id='author'>{list.author}</li>
-              <li>{list.first}</li>
-              <li>{list.second}</li>
-              <li>{list.third}</li>
-              <li>{list.fourth}</li>
-              <li>{list.fifth}</li>
+              <li>1. {list.first}</li>
+              <li>2. {list.second}</li>
+              <li>3. {list.third}</li>
+              <li>4. {list.fourth}</li>
+              <li>5. {list.fifth}</li>
             </ul>
           </Link>
         ))}
