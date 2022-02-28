@@ -4,17 +4,17 @@
     height: 100px;
     display: flex;
     align-items: center;
-    background: rgb(250, 247, 234);
-    margin-top: -20px;
+    background: linear-gradient(rgb(221, 215, 189), 25%, rgb(250, 247, 234)) ;
+    margin-top: -15px;
 }
 .home{
     position: fixed;
     right: 0;
     left: 0;
     font-family: 'Modak';
-    color: rgb(0, 0, 0);
+    color: rgb(231, 132, 102);
     font-size: xx-large;
-    text-shadow: 2px 2px rgb(253, 0, 0);
+    text-shadow: 2px 2px rgb(243, 198, 198);
     text-decoration: none;
     padding-top: 10px;
 }
@@ -26,6 +26,7 @@
 
 .login, .signup, .cat, .users, .logout{
     padding: 5px;
+    color: chocolate;
 }
 
 @media (max-width: 400px){
