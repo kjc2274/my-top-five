@@ -17,9 +17,13 @@ export default function Login(props) {
             password
         }
         // use loginUser to set authtoken in localStorage and return authenticated user
-        const res = await loginUser(user);
-        props.setCurrentUser(res);
-        navigate('/')
+        try {
+          const res = await loginUser(user);
+          props.setCurrentUser(res);
+          navigate('/')          
+        } catch (error) {
+          alert("Unable to process login. Plese make sure your username and password are correct.")
+        }
     }} className='login-form'>
       <label className='login-input'>Username:
         <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>

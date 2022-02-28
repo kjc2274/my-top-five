@@ -11,6 +11,12 @@
     position: fixed;
     right: 0;
     left: 0;
+    font-family: 'Modak';
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    text-shadow: 2px 2px rgb(253, 0, 0);
+    text-decoration: none;
+    padding-top: 10px;
 }
 
 .links{
@@ -21,3 +27,18 @@
 .login, .signup, .cat, .users, .logout{
     padding: 5px;
 }
+
+@media (max-width: 400px){
+    .navbar{
+      width: 100vw;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 15px;
+    }
+    .login, .signup, .cat, .users, .logout{
+        padding: 1px;
+    }
+  }
