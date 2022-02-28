@@ -14,11 +14,36 @@
     justify-content: space-around;
 }
 
+.cat-card{
+    margin: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.cat-card:hover{
+    transform: scale(1.1);
+}
+
 .cat-explain{
-    width: 80vw;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    border: 2px solid peru;
+    background: rgb(236, 219, 208);
+    box-shadow: 3px 3px rgb(196, 130, 104);
+    font-family: cursive;
 }
 
 .category-image{
     width: 18vw;
     height: 20vh;
+    border: 4px ridge rgb(255, 255, 125);
+    border-radius: 10px;
+}
+
+#cat-page-title{
+    font-family: Pacifico;
+    text-shadow: -1px -1px 0 rgb(255, 255, 125), 
+    1px -1px 0 rgb(255, 255, 125), 
+    -1px 1px 0 rgb(255, 255, 125), 
+    1px 1px 0 rgb(255, 255, 125); 
 }

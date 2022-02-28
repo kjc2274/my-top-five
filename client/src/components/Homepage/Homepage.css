@@ -25,6 +25,10 @@
 #welcome{
     font-size: xxx-large;
     font-family: Pacifico;
+    text-shadow: -1px -1px 0 rgb(125, 235, 255),
+     1px -1px 0 rgb(125, 235, 255), 
+     -1px 1px 0 rgb(125, 235, 255), 
+     1px 1px 0 rgb(125, 235, 255);
 }
 
 #welcome-paragraph{
