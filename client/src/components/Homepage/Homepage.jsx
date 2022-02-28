@@ -24,7 +24,7 @@ export default function Homepage(props) {
       <button onClick={()=> navigate('/categories')}>Click here to continue, {props.currentUser.username}</button> 
       : 
       <div>
-        <button onClick={()=> handleClick()} className='guest-button'>Enter as Guest</button>
+        <button onClick={()=> handleClick()} className='guest-button'>Continue as Guest</button>
         <button onClick={()=> navigate('/login')} className='login-button'>Login</button>
       </div>
       }

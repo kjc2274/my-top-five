@@ -25,19 +25,21 @@ export default function UserCreate(props) {
         const res = await registerUser(user);
         props.setCurrentUser(res);
         navigate('/login')
-    }}>
-      <label>Username:
-        <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
-      </label>
-      <label>E-mail:  
-        <input type='text' value={email} onChange={(e)=> setEmail(e.target.value)}/>
-      </label>
-      <label>Password:
-        <input type='password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
-      </label>
-      <label>Confirm Password:
-        <input type='password' value={confirmPassword} onChange={(e)=> setConfirmPassword(e.target.value)}/>
-      </label>
+    }} id='user-create'>
+      <div id='user-create-form'>
+        <label className='create-input'>Username:
+          <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
+        </label>
+        <label className='create-input'>E-mail:  
+          <input type='text' value={email} onChange={(e)=> setEmail(e.target.value)}/>
+        </label>
+        <label className='create-input'>Password:
+          <input type='password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
+        </label>
+        <label className='create-input'>Confirm Password:
+          <input type='password' value={confirmPassword} onChange={(e)=> setConfirmPassword(e.target.value)}/>
+        </label>
+      </div>
         <button>Sign Up</button>
     </form>
   )
