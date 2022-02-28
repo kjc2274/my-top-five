@@ -9,14 +9,29 @@
 #list-display{
     background: rgb(245, 245, 220, .75);
     padding: 10px;
+    border-radius: 6px;
+    border: 2px solid peru;
+    box-shadow: 3px 3px rgb(196, 130, 104);
+    width: fit-content;
 }
 
 #list-comment{
-    background: rgb(245, 245, 220, .75);
+    width: fit-content;
     padding: 10px;
-    width: 50vw;
+    border-radius: 6px;
+    border: 2px solid peru;
+    background: rgb(236, 219, 208);
+    box-shadow: 3px 3px rgb(196, 130, 104);
+    font-family: cursive;
 }
 
 #list-author{
     font-size: x-large;
+}
+
+#update-list{
+    background: rgb(21, 32, 129);
+    padding: 5px;
+    color: rgb(230, 203, 255);
+    border-radius: 6px;
 }

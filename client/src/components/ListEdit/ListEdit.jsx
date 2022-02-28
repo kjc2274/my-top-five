@@ -64,10 +64,10 @@ export default function ListEdit() {
           <input type='text' value={fifth} onChange={(e)=> setFifth(e.target.value)}/>
         </label>
         <label className='edit-form-input'>Comments:
-          <input type='text' value={comment} onChange={(e)=> setComment(e.target.value)}/>
+          <textarea type='text' value={comment} onChange={(e)=> setComment(e.target.value)}/>
         </label>
       </div>
-        <button>Update</button>
+        <button id='update-button'>Update</button>
     </form>
   )
 }

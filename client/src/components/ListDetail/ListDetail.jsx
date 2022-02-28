@@ -23,15 +23,15 @@ export default function ListDetail(props) {
         : 
         <li>{list.author}</li>
         }
-        <li>{list.first}</li>
-        <li>{list.second}</li>
-        <li>{list.third}</li>
-        <li>{list.fourth}</li>
-        <li>{list.fifth}</li>
+        <li>1. {list.first}</li>
+        <li>2. {list.second}</li>
+        <li>3. {list.third}</li>
+        <li>4. {list.fourth}</li>
+        <li>5. {list.fifth}</li>
       </ul>
-      <p id='list-comment'>{list.comment}</p>
+      <p id='list-comment'>Author Comments: {list.comment}</p>
       {props.currentUser?.id === list.user?.id && props.currentUser?.id !== 4 ? 
-          <Link to={`/categories/${category_id}/${list_id}/edit`}><button>Update List</button></Link>
+          <Link to={`/categories/${category_id}/${list_id}/edit`}><button id='update-list'>Update List</button></Link>
           : null}
     </div>
   )
