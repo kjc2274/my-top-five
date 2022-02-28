@@ -15,12 +15,12 @@ export default function Categories() {
   },[]);
 
   return (
-    <div>
+    <div className='categories-page'>
       <h2>Categories</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolor deserunt esse quasi rem voluptas. At nam eum et? Fuga, minus assumenda! Tempore quidem, sapiente dignissimos distinctio voluptatibus debitis minima.</p>
+      <p>Select a category to see all of the lists posted under that category. See what other people enjoy, and maybe create your own list to share!</p>
       {categories.map((category)=>(
         <Link to={`/categories/${category.id}`} key={category.id}>
-          <img src={category.image} alt={category.title} />
+          <img src={category.image} alt={category.title} className='category-image'/>
           <h4>{category.title}</h4>
         </Link>
       ))}
