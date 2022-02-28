@@ -43,28 +43,30 @@ export default function ListEdit() {
       await updateList(category_id, list_id, list);
       navigate(`/categories/${category_id}/${list_id}`)
       }}
-    >
-      <label>Author:
-        <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)}/>
-      </label>
-      <label>First:  
-        <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)}/>
-      </label>
-      <label>Second:
-        <input type='text' value={second} onChange={(e)=> setSecond(e.target.value)}/>
-      </label>
-      <label>Third:
-        <input type='text' value={third} onChange={(e)=> setThird(e.target.value)}/>
-      </label>
-      <label>Fourth:
-        <input type='text' value={fourth} onChange={(e)=> setFourth(e.target.value)}/>
-      </label>
-      <label>Fifth:
-        <input type='text' value={fifth} onChange={(e)=> setFifth(e.target.value)}/>
-      </label>
-      <label>Comments:
-        <input type='text' value={comment} onChange={(e)=> setComment(e.target.value)}/>
-      </label>
+    id='list-edit'>
+      <div id='edit-form'>
+        <label className='edit-form-input'>Author:
+          <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>First:  
+          <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>Second:
+          <input type='text' value={second} onChange={(e)=> setSecond(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>Third:
+          <input type='text' value={third} onChange={(e)=> setThird(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>Fourth:
+          <input type='text' value={fourth} onChange={(e)=> setFourth(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>Fifth:
+          <input type='text' value={fifth} onChange={(e)=> setFifth(e.target.value)}/>
+        </label>
+        <label className='edit-form-input'>Comments:
+          <input type='text' value={comment} onChange={(e)=> setComment(e.target.value)}/>
+        </label>
+      </div>
         <button>Update</button>
     </form>
   )
