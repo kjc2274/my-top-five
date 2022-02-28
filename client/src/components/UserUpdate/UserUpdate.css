@@ -1,0 +1,20 @@
+#user-update{
+    padding-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-edit-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: rgba(245, 220, 220, 0.75);
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.edit-input{
+    margin: 8px;
+}
