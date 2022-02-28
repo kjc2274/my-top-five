@@ -19,13 +19,13 @@ export default function Homepage(props) {
     <div className='homepage'>
       <h2 id='welcome'>Welcome!</h2>
       <img src="https://cdn.iconscout.com/icon/free/png-256/list-collection-number-rank-position-categories-30514.png" alt="list" className='list-image'/>
-      <p id='welcome-paragraph'>My Top 5 is a forum for sharing the things that bring us joy! Feel free to come on in and have a look around!</p>
+      <p id='welcome-paragraph'><span id='my-top-5'>My Top 5</span> is a forum for sharing the things that bring us joy! Feel free to come on in and have a look around!</p>
       {props.currentUser && props.currentUser.id !== 4 ? 
-      <button onClick={()=> navigate('/categories')}>Click here to continue, {props.currentUser.username}</button> 
+      <button onClick={()=> navigate('/categories')} id='continue-button'>Click here to continue, <span id='username'>{props.currentUser.username}</span></button> 
       : 
       <div>
-        <button onClick={()=> handleClick()} className='guest-button'>Continue as Guest</button>
-        <button onClick={()=> navigate('/login')} className='login-button'>Login</button>
+        <button onClick={()=> handleClick()} id='guest-button'>Continue as Guest</button>
+        <button onClick={()=> navigate('/login')} id='login-button'>Login</button>
       </div>
       }
     </div>

@@ -11,12 +11,20 @@
     width: 20vw;
 }
 
-.guest-button, .login-button{
+#guest-button, #login-button{
     margin: 5px;
 }
 
+#guest-button, #login-button, #continue-button{
+    background: rgb(80, 40, 11);
+    padding: 5px;
+    color: rgb(230, 203, 255);
+    border-radius: 6px;
+}
+
 #welcome{
-    font-family: cursive;
+    font-size: xxx-large;
+    font-family: Pacifico;
 }
 
 #welcome-paragraph{
@@ -27,4 +35,14 @@
     background: rgb(236, 219, 208);
     box-shadow: 3px 3px rgb(196, 130, 104);
     font-family: cursive;
+}
+
+#my-top-5{
+    color: rgb(0, 119, 255);
+    font-weight: 600;
+}
+
+#username{
+    font-weight: 600;
+    color: rgb(156, 198, 247);
 }
