@@ -35,7 +35,7 @@ export default function UserDetail(props) {
       {lists.map((list)=>(
         <div key={list.id} className='user-ul'>
           <Link to={`/categories/${list.category.id}/${list.id}`} key={list.id}>
-            <ul>
+            <ul className='user-li'>
               <li id='title'>{list.category.title}</li>
               <li>{list.first}</li>
               <li>{list.second}</li>

@@ -25,23 +25,25 @@ export default function Lists() {
   },[category_id]);
 
   return (
-    <div>
+    <div className='list-page'>
       <h2>{category.title}</h2>
-      <img src={category.image} alt={category.title} />
+      <img src={category.image} alt={category.title} className='cat-image'/>
       <p>{category.description}</p>
       <Link to={`/categories/${category_id}/new`}><button>Add List</button></Link>
-      {lists.map((list)=>(
-        <Link to={`/categories/${category_id}/${list.id}`} key={list.id}>
-          <ul>
-            <li>{list.author}</li>
-            <li>{list.first}</li>
-            <li>{list.second}</li>
-            <li>{list.third}</li>
-            <li>{list.fourth}</li>
-            <li>{list.fifth}</li>
-          </ul>
-        </Link>
-      ))}
+      <div className='lists-div'>
+        {lists.map((list)=>(
+          <Link to={`/categories/${category_id}/${list.id}`} key={list.id}>
+            <ul className='lists'>
+              <li id='author'>{list.author}</li>
+              <li>{list.first}</li>
+              <li>{list.second}</li>
+              <li>{list.third}</li>
+              <li>{list.fourth}</li>
+              <li>{list.fifth}</li>
+            </ul>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
