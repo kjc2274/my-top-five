@@ -1,0 +1,22 @@
+#list-detail{
+    padding-top: 100px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list-display{
+    background: rgb(245, 245, 220, .75);
+    padding: 10px;
+}
+
+#list-comment{
+    background: rgb(245, 245, 220, .75);
+    padding: 10px;
+    width: 50vw;
+}
+
+#list-author{
+    font-size: x-large;
+}

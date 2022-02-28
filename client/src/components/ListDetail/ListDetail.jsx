@@ -16,10 +16,10 @@ export default function ListDetail(props) {
   },[category_id, list_id]);
 
   return (
-    <div>
-      <ul>
+    <div id='list-detail'>
+      <ul id='list-display'>
         {list.user?.id !== 4 ? 
-        <Link to={`/users/${list.user?.id}`}><li>{list.author}</li></Link>
+        <Link to={`/users/${list.user?.id}`}><li id='list-author'>{list.author}</li></Link>
         : 
         <li>{list.author}</li>
         }
@@ -29,7 +29,7 @@ export default function ListDetail(props) {
         <li>{list.fourth}</li>
         <li>{list.fifth}</li>
       </ul>
-      <p>{list.comment}</p>
+      <p id='list-comment'>{list.comment}</p>
       {props.currentUser?.id === list.user?.id && props.currentUser?.id !== 4 ? 
           <Link to={`/categories/${category_id}/${list_id}/edit`}><button>Update List</button></Link>
           : null}

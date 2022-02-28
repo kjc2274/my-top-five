@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: rgb(245, 212, 192);
   background: url('https://img.freepik.com/free-photo/top-view-arrangement-natural-material-stationery_23-2148898233.jpg');
   background-size: cover;
 }
@@ -10,4 +11,9 @@
 
 p{
   width: 80vw;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0px;
 }
