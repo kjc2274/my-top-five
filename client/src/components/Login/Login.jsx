@@ -21,13 +21,13 @@ export default function Login(props) {
         props.setCurrentUser(res);
         navigate('/')
     }} className='login-form'>
-      <label>Username:
+      <label className='login-input'>Username:
         <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>
       </label>
-      <label>Password:
+      <label className='login-input'>Password:
         <input type='password' value={password} onChange={(e)=> setPassword(e.target.value)}/>
       </label>
-        <button>Login</button>
+        <button className='login-submit'>Login</button>
     </form>
   )
 }
