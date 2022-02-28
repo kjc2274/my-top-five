@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: url('https://img.freepik.com/free-photo/top-view-arrangement-natural-material-stationery_23-2148898233.jpg');
+  background-size: cover;
 }
 
 .App-link {

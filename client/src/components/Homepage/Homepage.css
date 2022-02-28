@@ -1,0 +1,16 @@
+.homepage{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+}
+
+.list-image{
+    width: 20vw;
+}
+
+.guest-button, .login-button{
+    margin: 5px;
+}

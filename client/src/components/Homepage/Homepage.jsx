@@ -16,16 +16,16 @@ export default function Homepage(props) {
   }
 
   return (
-    <div>
+    <div className='homepage'>
       <h2>Welcome!</h2>
-      <img src="https://www.how-to-draw-funny-cartoons.com/images/cartoon-list-007.jpg" alt="list" />
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati provident dolorem ipsam cumque placeat voluptas? Fugit quasi excepturi nobis, temporibus tenetur veritatis. Consectetur, voluptatibus perspiciatis similique incidunt porro aliquam officiis?</p>
+      <img src="https://cdn.iconscout.com/icon/free/png-256/list-collection-number-rank-position-categories-30514.png" alt="list" className='list-image'/>
+      <p>My Top 5 is a forum for sharing the things that bring us joy! Feel free to come on in and have a look around!</p>
       {props.currentUser && props.currentUser.id !== 4 ? 
       <button onClick={()=> navigate('/categories')}>Click here to continue, {props.currentUser.username}</button> 
       : 
       <div>
-        <button onClick={()=> handleClick()}>Enter as Guest</button>
-        <button onClick={()=> navigate('/login')}>Login</button>
+        <button onClick={()=> handleClick()} className='guest-button'>Enter as Guest</button>
+        <button onClick={()=> navigate('/login')} className='login-button'>Login</button>
       </div>
       }
     </div>
