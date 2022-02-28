@@ -1,6 +1,6 @@
 import './UserDetail.css';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { deleteList, getOneUser, getUserLists } from '../../services/api-config';
 
 export default function UserDetail(props) {
@@ -28,25 +28,28 @@ export default function UserDetail(props) {
   }
 
   return (
-    <div>
+    <div className='user-info'>
       <h2>{user.username}</h2>
       <h4>{user.email}</h4>
+      <div className='user-lists'>
       {lists.map((list)=>(
-        <div key={list.id}>
-          <ul>
-            <li>{list.category.title}</li>
-            <li>{list.first}</li>
-            <li>{list.second}</li>
-            <li>{list.third}</li>
-            <li>{list.fourth}</li>
-            <li>{list.fifth}</li>
-          </ul>
-          <p>{list.comment}</p>
+        <div key={list.id} className='user-ul'>
+          <Link to={`/categories/${list.category.id}/${list.id}`} key={list.id}>
+            <ul>
+              <li id='title'>{list.category.title}</li>
+              <li>{list.first}</li>
+              <li>{list.second}</li>
+              <li>{list.third}</li>
+              <li>{list.fourth}</li>
+              <li>{list.fifth}</li>
+            </ul>
+          </Link>
           {props.currentUser?.id === user?.id ? 
           <button onClick={()=>handleDelete(list.id)}>Delete List</button>
           : null}
         </div>
       ))}
+      </div>
     </div>
   )
 }

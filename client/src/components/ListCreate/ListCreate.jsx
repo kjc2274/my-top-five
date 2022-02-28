@@ -29,7 +29,7 @@ export default function ListCreate() {
       await createList(category_id, list);
       navigate(`/categories/${category_id}`)
       }}
-    >
+    className='list-create'>
       <label>Author:
         <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username here'/>
       </label>
