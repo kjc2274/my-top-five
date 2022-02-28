@@ -5,4 +5,15 @@
     background: grey;
     width: 100%;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-links{
+    margin: 0 8px;
+}
+
+#my-name{
+    margin: 3px;
 }
