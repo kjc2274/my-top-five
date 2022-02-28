@@ -1,9 +1,24 @@
 .categories-page{
     padding-top: 100px;
-    height: 90vh;
+    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cats{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cat-explain{
+    width: 80vw;
 }
 
 .category-image{
-    width: 20vw;
+    width: 18vw;
     height: 20vh;
 }

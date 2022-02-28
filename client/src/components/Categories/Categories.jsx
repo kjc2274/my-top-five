@@ -17,13 +17,15 @@ export default function Categories() {
   return (
     <div className='categories-page'>
       <h2>Categories</h2>
-      <p>Select a category to see all of the lists posted under that category. See what other people enjoy, and maybe create your own list to share!</p>
-      {categories.map((category)=>(
-        <Link to={`/categories/${category.id}`} key={category.id}>
-          <img src={category.image} alt={category.title} className='category-image'/>
-          <h4>{category.title}</h4>
-        </Link>
-      ))}
+      <p className='cat-explain'>Select a category to see all of the lists posted under that category. See what other people enjoy, and maybe create your own list to share!</p>
+      <div className='cats'>
+        {categories.map((category)=>(
+          <Link to={`/categories/${category.id}`} key={category.id}>
+            <img src={category.image} alt={category.title} className='category-image'/>
+            <h4>{category.title}</h4>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
