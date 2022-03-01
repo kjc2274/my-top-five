@@ -31,3 +31,7 @@
 #login-title{
     font-family: Pacifico;
 }
+
+#login-div input{
+    font-size: x-large;
+}
