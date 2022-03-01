@@ -1,11 +1,11 @@
 .list-page{
     padding-top: 100px;
-    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    max-height: 100vmax;
+    height: 100%;
+    padding-bottom: 10vh;
 }
 
 .cat-image{
