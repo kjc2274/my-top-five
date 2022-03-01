@@ -18,7 +18,6 @@ export default function Categories(props) {
   },[]);
 
   const search = (e) =>{
-    // e.preventDefault();
     const input = e.target.value;
     if (input !== ''){
         const filtered = categories.filter((category)=>{

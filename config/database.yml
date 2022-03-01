@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: my_top_five_production
+  username: my_top_five
+  password: <%= ENV['MY_TOP_FIVE_DATABASE_PASSWORD'] %>
