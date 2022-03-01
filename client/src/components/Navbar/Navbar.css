@@ -53,4 +53,7 @@ h1:hover{
     .login, .signup, .cat, .users, .logout{
         padding: 1px;
     }
+    h1{
+        font-size: 2.5rem;
+    }
   }

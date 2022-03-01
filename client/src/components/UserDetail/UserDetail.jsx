@@ -29,7 +29,7 @@ export default function UserDetail(props) {
 
   return (
     <div className='user-info'>
-      <h2>{user.username}</h2>
+      <h2 id='user-detail-title'>{user.username}</h2>
       {props.currentUser.id === user.id ? 
       <div>
         <h4>{user.email}</h4>

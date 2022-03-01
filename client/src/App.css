@@ -63,4 +63,45 @@ input{
   .App{
     width: 100vw;
   }
+  .App .list-image{
+    width: 50vw;
+  }
+  .App #user-create-form{
+    font-size: medium;
+    width: 90vw;
+  }
+  .App #login-div{
+    font-size: x-large;
+  }
+  .App .login-submit{
+    font-size: x-large;
+  }
+  .App .categories-page{
+    background: linear-gradient(90deg, rgb(236, 220, 185), rgb(190, 174, 139)); 
+  }
+  .App .cat-image{
+    width: 50vw;
+  }
+  .App #add-list{
+    font-size: x-large;
+  }
+  .App .lists{
+    width: 80vw;
+  }
+  .App #update-list{
+    font-size: large;
+    margin-bottom: 100px;
+  }
+  .App #list-edit{
+    padding-bottom: 100px;
+  }
+  .App #update-button{
+    font-size: large;
+  }
+  .App .user-info{
+    background: linear-gradient(90deg, rgb(236, 220, 185), rgb(190, 174, 139));
+  }
+  .App #user-edit-form{
+    font-size: medium;
+  }
 }
