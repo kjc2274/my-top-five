@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background: rgb(245, 212, 192);
+  background: rgb(255, 219, 140);
   background: url('https://img.freepik.com/free-photo/top-view-arrangement-natural-material-stationery_23-2148898233.jpg');
   background-size: cover;
 }
@@ -29,9 +29,33 @@ ul{
   padding-left: 0px;
 }
 
+input{
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px){
   .App{
     width: 100vw;
+  }
+  .App .cat-explain{
+    width: 80vw;
+  }
+  .App #cat-description{
+    width: 80vw;
+  }
+  .App .lists{
+    width: 25vw;
+    padding: 12px;
+  }
+  .App .user-ul{
+    width: 300px;
+  }
+  .App .user-info{
+    font-size: x-large;
+  }
+  .App .user-lists{
+    width: 100vw;
+    padding-bottom: 50px;
   }
 }
 
@@ -39,8 +63,4 @@ ul{
   .App{
     width: 100vw;
   }
-}
-
-input{
-  border-radius: 4px;
 }

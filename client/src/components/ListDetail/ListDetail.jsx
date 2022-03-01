@@ -17,6 +17,7 @@ export default function ListDetail(props) {
 
   return (
     <div id='list-detail'>
+      <h2 id='list-details-title'>List Details</h2>
       <ul id='list-display'>
         {list.user?.id !== 4 ? 
         <Link to={`/users/${list.user?.id}`}><li id='list-author'>{list.author}</li></Link>

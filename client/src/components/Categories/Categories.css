@@ -34,8 +34,8 @@
 }
 
 .category-image{
-    width: 18vw;
-    height: 20vh;
+    width: 300px;
+    height: 200px;
     border: 4px ridge rgb(255, 255, 125);
     border-radius: 10px;
 }

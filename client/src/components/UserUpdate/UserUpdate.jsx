@@ -28,6 +28,7 @@ export default function UserUpdate(props) {
           //navigate to UserDetail to confirm changes
           navigate(`/users/${id}`)
       }} id='user-update'>
+        <h2 id='user-update-title'>Update Account Info</h2>
         <div id='user-edit-form'>
           <label className='edit-input'>Username:
             <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>

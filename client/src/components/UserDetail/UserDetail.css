@@ -1,6 +1,6 @@
 .user-info{
     padding-top: 100px;
-    height: 90vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
