@@ -13,6 +13,8 @@
     background: rgba(245, 220, 220, 0.75);
     padding: 10px;
     margin-bottom: 5px;
+    border: 2px solid gold;
+    border-radius: 6px;
 }
 
 .edit-input{

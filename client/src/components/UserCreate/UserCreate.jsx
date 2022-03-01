@@ -26,6 +26,7 @@ export default function UserCreate(props) {
         props.setCurrentUser(res);
         navigate('/login')
     }} id='user-create'>
+      <h2 id='sign-up'>Sign Up!</h2>
       <div id='user-create-form'>
         <label className='create-input'>Username:
           <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>

@@ -25,6 +25,7 @@ export default function Login(props) {
           alert("Unable to process login. Plese make sure your username and password are correct.")
         }
     }} className='login-form'>
+      <h2 id='login-title'>Login</h2>
       <div id='login-div'>
         <label className='login-input'>Username:
           <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)}/>

@@ -44,6 +44,7 @@ export default function ListEdit() {
       navigate(`/categories/${category_id}/${list_id}`)
       }}
     id='list-edit'>
+      <h2 id='list-update-title'>Update Your List!</h2>
       <div id='edit-form'>
         <label className='edit-form-input'>Author:
           <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)}/>

@@ -27,3 +27,7 @@
     color: rgb(230, 203, 255);
     border-radius: 6px;
 }
+
+#login-title{
+    font-family: Pacifico;
+}

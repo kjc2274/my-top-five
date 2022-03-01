@@ -30,6 +30,7 @@ export default function ListCreate() {
       navigate(`/categories/${category_id}`)
       }}
     className='list-create'>
+      <h2 id='create-list-title'>Create a List!</h2>
       <div id='form-div'>
         <label className='list-create-form'>Author: 
           <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username'/>

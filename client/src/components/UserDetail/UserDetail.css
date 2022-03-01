@@ -1,12 +1,16 @@
 .user-info{
     padding-top: 100px;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .user-lists{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 80vw;
 }
 
 .user-ul{

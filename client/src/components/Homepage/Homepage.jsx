@@ -18,7 +18,7 @@ export default function Homepage(props) {
   return (
     <div className='homepage'>
       <h2 id='welcome'>Welcome!</h2>
-      <img src="https://cdn.iconscout.com/icon/free/png-256/list-collection-number-rank-position-categories-30514.png" alt="list" className='list-image'/>
+      <img src="https://img.freepik.com/free-vector/top-5-rating-sign-ranking-number-white-background_419341-270.jpg" alt="list" className='list-image'/>
       <p id='welcome-paragraph'><span id='my-top-5'>My Top 5</span> is a forum for sharing the things that bring us joy! Feel free to come on in and have a look around!</p>
       {props.currentUser && props.currentUser.id !== 4 ? 
       <button onClick={()=> navigate('/categories')} id='continue-button'>Click here to continue, <span id='username'>{props.currentUser.username}</span></button> 
