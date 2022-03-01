@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 export default function CategoryCreate() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState('https://t3.ftcdn.net/jpg/02/00/52/34/360_F_200523424_HzY3FumKGTn10RdqjbUNBuJ6QbwFKVFS.jpg');
   const navigate = useNavigate();
 
 
