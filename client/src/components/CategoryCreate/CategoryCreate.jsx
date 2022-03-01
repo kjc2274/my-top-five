@@ -28,7 +28,7 @@ export default function CategoryCreate() {
           <input type='text' value={title} onChange={(e)=> setTitle(e.target.value)} />
         </label>
         <label className='cat-create-form'>Description:   
-          <input type='text' value={description} onChange={(e)=> setDescription(e.target.value)} required/>
+          <textarea type='text' value={description} onChange={(e)=> setDescription(e.target.value)} required/>
         </label>
         <label className='cat-create-form'>Image URL: 
           <input type='text' value={image} onChange={(e)=> setImage(e.target.value)} required/>

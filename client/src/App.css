@@ -95,4 +95,8 @@ input{
   .App #user-edit-form{
     font-size: medium;
   }
+  .App #cat-create-page{
+    height: 100%;
+    padding-bottom: 100px;
+  }
 }

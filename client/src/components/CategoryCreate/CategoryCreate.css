@@ -4,4 +4,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: xx-large;
+}
+
+#cat-create-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background: rgb(245, 245, 220, .75);
+    padding: 10px;
+    border: 2px solid silver;
+    border-radius: 8px;
+    font-family: cursive;
+}
+
+#create-cat-title{
+    font-family: Pacifico;
+}
+
+.cat-create-form{
+    margin: 8px;
+}
+
+#cat-create-div textarea{
+    padding: 3px;
+    resize: none;
+    height: 200px;
+    width: 300px;
+}
+
+#cat-create-div textarea, input{
+    font-size: x-large;
+}
+
+#create-cat-button{
+    background: rgb(107, 72, 126);
+    padding: 5px;
+    margin: 10px;
+    color: rgb(230, 203, 255);
+    border-radius: 6px;
+    transition: all .1s ease-in-out;
+}
+
+#create-cat-button:hover{
+    background: green;
+    transform: scale(1.1);
 }
