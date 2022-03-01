@@ -33,6 +33,7 @@ export default function CategoryCreate() {
         <label className='cat-create-form'>Image URL: 
           <input type='text' value={image} onChange={(e)=> setImage(e.target.value)} required/>
         </label>
+        <h6>Use provided URL or replace with your own.</h6>
       </div>
         <button id='create-cat-button'>Create</button>
     </form>

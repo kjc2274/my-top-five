@@ -67,6 +67,9 @@ input{
     font-size: medium;
     width: 90vw;
   }
+  .App #user-create-form input{
+    width: 80vw;
+  }
   .App #login-div{
     font-size: x-large;
   }
