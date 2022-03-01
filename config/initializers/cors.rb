@@ -10,8 +10,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins "*"
 
     resource "*",
-      headers: :any,
-      Access-Control-Allow-Origin: *,
+      Access-Control-Allow-Headers: any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
 end
