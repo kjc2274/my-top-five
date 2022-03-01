@@ -33,7 +33,7 @@ export default function ListCreate() {
       <h2 id='create-list-title'>Create a List!</h2>
       <div id='form-div'>
         <label className='list-create-form'>Author: 
-          <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} placeholder='Enter your name or username'/>
+          <input type='text' value={author} onChange={(e)=> setAuthor(e.target.value)} />
         </label>
         <label className='list-create-form'>First:   
           <input type='text' value={first} onChange={(e)=> setFirst(e.target.value)} required/>
