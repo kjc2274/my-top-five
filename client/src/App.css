@@ -73,9 +73,6 @@ input{
   .App .login-submit{
     font-size: x-large;
   }
-  .App .categories-page{
-    /* background: linear-gradient(90deg, rgb(236, 220, 185), rgb(190, 174, 139));  */
-  }
   .App .cat-image{
     width: 50vw;
   }
@@ -94,9 +91,6 @@ input{
   }
   .App #update-button{
     font-size: large;
-  }
-  .App .user-info{
-    background: linear-gradient(90deg, rgb(236, 220, 185), rgb(190, 174, 139));
   }
   .App #user-edit-form{
     font-size: medium;

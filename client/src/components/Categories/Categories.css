@@ -48,3 +48,6 @@
     -1px 1px 0 rgb(255, 255, 125), 
     1px 1px 0 rgb(255, 255, 125); 
 }
+ .categories-page input{
+     padding: 5px;
+ }

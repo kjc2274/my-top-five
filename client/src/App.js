@@ -42,7 +42,7 @@ function App() {
       <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
         <Route path='/' element={<Homepage currentUser={currentUser} setCurrentUser={setCurrentUser}/>}/>
-        <Route path='/categories' element={<Categories/>}/>
+        <Route path='/categories' element={<Categories currentUser={currentUser}/>}/>
         <Route path='/categories/create' element={<CategoryCreate/>}/>
         <Route path='/categories/:category_id' element={<Lists/>}/>
         <Route path='/categories/:category_id/:list_id' element={<ListDetail currentUser={currentUser}/>}/>

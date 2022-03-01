@@ -32,7 +32,7 @@ export default function UserDetail(props) {
       <h2 id='user-detail-title'>{user.username}</h2>
       {props.currentUser.id === user.id ? 
       <div>
-        <h4>{user.email}</h4>
+        <h4>E-mail: {user.email}</h4>
         <Link to={`/users/${user.id}/edit`}><button>Edit User</button></Link>
       </div>
       :
