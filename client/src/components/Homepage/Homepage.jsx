@@ -6,7 +6,7 @@ export default function Homepage(props) {
   const navigate = useNavigate();
 
   const handleClick = async()=>{
-    if (props.currentUser.id === 4){
+    if (props.currentUser?.id === 4){
       navigate('/categories')
     }
     const user = {
