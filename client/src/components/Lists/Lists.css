@@ -50,6 +50,7 @@
 
 #cat-description{
     width: fit-content;
+    max-width: 90vw;
     padding: 10px;
     border-radius: 6px;
     border: 2px solid peru;
