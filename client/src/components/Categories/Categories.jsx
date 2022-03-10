@@ -39,8 +39,8 @@ export default function Categories(props) {
       <input type="search" value={q} onChange={search} placeholder='Search'/>
       <div className='cats'>
         {filteredCategories.map((category)=>(
-          <div className='cat-card'>
-            <Link to={`/categories/${category.id}`} key={category.id}>
+          <div className='cat-card' key={category.id}>
+            <Link to={`/categories/${category.id}`} >
               <img src={category.image} alt={category.title} className='category-image'/>
               <h4>{category.title}</h4>
             </Link>

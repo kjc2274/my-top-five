@@ -84,6 +84,9 @@ input{
   }
   .App .lists{
     width: 80vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   .App #update-list{
     font-size: large;
