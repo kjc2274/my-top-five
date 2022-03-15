@@ -87,6 +87,7 @@ input{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
   }
   .App #update-list{
     font-size: large;
