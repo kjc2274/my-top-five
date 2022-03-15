@@ -82,7 +82,7 @@ input{
   .App #add-list{
     font-size: x-large;
   }
-  .App .lists{
+  .App .lists-div{
     width: 80vw;
     display: flex;
     flex-direction: column;
